@@ -67,7 +67,13 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 ---
 
 ## 🗃️ Struktur File
-
+├── telco_churn_analysis.ipynb # Notebook utama
+├── telco_customer_churn.csv # Dataset pelanggan
+├── model_lr.pkl # Logistic Regression terlatih
+├── kmeans_model.pkl # Model K-Means terlatih
+├── scaler.pkl # Standarisasi data
+├── pca.pkl # Reduksi dimensi
+├── encoder.pkl # Label encoder
 
 ---
 
