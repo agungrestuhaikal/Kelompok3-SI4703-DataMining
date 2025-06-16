@@ -90,7 +90,7 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 - ROC AUC: **0.8483**
 - MSE: **0.2264**
 
-## 🔍 Interpretasi:
+### 🔍 Interpretasi:
 - Recall tinggi (80.60%) menunjukkan model efektif dalam mendeteksi pelanggan yang benar-benar churn.
 - ROC AUC > 0.84 menandakan kemampuan diskriminatif yang sangat baik antara churn dan non-churn.
 - Model ini cocok digunakan sebagai baseline untuk sistem rekomendasi retensi pelanggan.
@@ -100,7 +100,7 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 ### 🔹 K-Means Clustering (K = 3):
 - Silhouette Score: **0.4177** (clustering sedang, dapat ditingkatkan)
 
-## 🔍 Interpretasi:
+### 🔍 Interpretasi:
 
 - Nilai silhouette score 0.4177 menunjukkan bahwa hasil pengelompokan cukup baik (moderat).
 
