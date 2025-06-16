@@ -112,6 +112,40 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 
 ---
 
+## 🚀 Deployment
+
+Model klasifikasi churn dan segmentasi pelanggan telah berhasil diimplementasikan ke dalam dua aplikasi berbasis **Streamlit**. Aplikasi ini memungkinkan pengguna untuk berinteraksi secara langsung dengan model tanpa harus menjalankan kode secara manual.
+
+### 📌 Teknologi yang Digunakan
+- Python 3.10+
+- Streamlit
+- Pickle (`.pkl`) untuk serialisasi model dan preprocessing pipeline
+- Hosting via Streamlit Cloud
+
+---
+
+### 🧩 Aplikasi Segmentasi Pelanggan (K-Means Clustering)
+🔗 [https://kelompok3-si4703-datamining-klustering.streamlit.app/](https://kelompok3-si4703-datamining-klustering.streamlit.app/)
+
+**Fitur:**
+- Input atribut pelanggan (jenis kelamin, layanan, kontrak, tagihan, dll)
+- Prediksi segmen pelanggan (klaster) berdasarkan model K-Means (K=3)
+- Load otomatis model dan preprocessing pipeline
+- Output klaster ditampilkan secara real-time
+
+---
+
+### 📊 Aplikasi Prediksi Churn Pelanggan (Logistic Regression)
+🔗 [https://kelompok3-si4703-datamining-klasifikasi.streamlit.app/](https://kelompok3-si4703-datamining-klasifikasi.streamlit.app/)
+
+**Fitur:**
+- Prediksi apakah pelanggan akan churn atau tidak
+- Input interaktif dengan komponen UI yang ramah pengguna
+- Proses preprocessing otomatis (SMOTE, encoding, scaling, PCA)
+- Output hasil prediksi dan kemungkinan churn
+
+---
+
 ## 👨‍💻 Tim Pengembang
 SI-47-03 | Kelompok 3
 - Muhammad Fadli Deandri Putra  
