@@ -74,18 +74,36 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 ## 🧠 Insight Utama
 
 ### ✅ Logistic Regression:
-- Accuracy: **76.30%**
-- Precision: **74.49%**
-- Recall: **79.45%**
-- F1 Score: **76.89%**
-- ROC AUC: **0.8409**
+- Accuracy: **77.36%**
+- Precision: **75.24%**
+- Recall: **80.60%**
+- F1 Score: **77.83%**
+- ROC AUC: **0.8483**
+- MSE: **0.2264**
 
-### 🔹 K-Means Clustering (K = 10):
-- Silhouette Score: **0.3461** (clustering sedang, dapat ditingkatkan)
+## 🔍 Interpretasi:
 
+- Recall tinggi (80.60%) menunjukkan model efektif dalam mendeteksi pelanggan yang benar-benar churn.
+- ROC AUC > 0.84 menandakan kemampuan diskriminatif yang sangat baik antara churn dan non-churn.
+- Model ini cocok digunakan sebagai baseline untuk sistem rekomendasi retensi pelanggan.
+
+### 🔹 K-Means Clustering (K = 3):
+- Silhouette Score: **0.4177** (clustering sedang, dapat ditingkatkan)
+
+## 🔍 Interpretasi:
+
+- Nilai silhouette score 0.4177 menunjukkan bahwa hasil pengelompokan cukup baik (moderat).
+
+- Artinya, tiap klaster relatif kohesif secara internal dan terpisah dari klaster lain, meskipun masih terdapat peluang perbaikan.
+
+- Dengan jumlah klaster hanya 3, segmentasi menjadi lebih sederhana dan mudah dianalisis, cocok untuk strategi awal segmentasi pelanggan.
+
+- Setiap klaster dapat dianalisis lebih lanjut berdasarkan atribut seperti tenure, MonthlyCharges, dan Contract untuk membantu menyusun strategi pemasaran yang lebih terarah.
+- 
 ---
 
 ## 👨‍💻 Tim Pengembang
+SI-47-03 | Kelompok 3
 - Muhammad Fadli Deandri Putra  
 - Andi Meuthia Rionawita  
 - Frixtho Alex Credorius Latumahina  
