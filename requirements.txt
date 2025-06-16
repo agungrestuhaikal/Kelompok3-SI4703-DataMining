@@ -39,9 +39,9 @@ mysql-connector-python==8.4.0
 narwhals==1.38.2
 nest-asyncio==1.6.0
 networkx==3.4.2
-numpy==1.26.4
+numpy
 packaging==24.0
-pandas==2.2.2
+pandas
 parso==0.8.4
 patsy==1.0.1
 phik==0.12.4
