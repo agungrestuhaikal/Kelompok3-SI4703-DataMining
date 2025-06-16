@@ -67,13 +67,16 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 ---
 
 ## 🗃️ Struktur File
-├── telco_churn_analysis.ipynb # Notebook utama
-├── telco_customer_churn.csv # Dataset pelanggan
-├── model_lr.pkl # Logistic Regression terlatih
-├── kmeans_model.pkl # Model K-Means terlatih
-├── scaler.pkl # Standarisasi data
-├── pca.pkl # Reduksi dimensi
-├── encoder.pkl # Label encoder
+├── Kelompok_3_SI4703_DATMIN_FINAL.ipynb         # Notebook utama berisi seluruh proses analisis
+├── Telco customer churn.csv                      # Dataset utama dari Kaggle
+├── app_klasifikasi_churn.py                      # Aplikasi/script prediksi churn (API atau CLI)
+├── app_segmentasi_pelanggan.py                   # Aplikasi/script segmentasi pelanggan
+├── model_klasifikasi.pkl                          # Model Logistic Regression (klasifikasi churn)
+├── model_kmeans.pkl                               # Model K-Means Clustering
+├── preprocessing_assets_klasifikasi.pkl           # Encoder, scaler, dan PCA untuk klasifikasi
+├── preprocessing_assets_clustering.pkl            # Encoder, scaler, dan PCA untuk clustering
+├── requirements.txt                               # Daftar dependensi library Python
+├── README.md                                      # Dokumentasi proyek
 
 ---
 
@@ -88,10 +91,11 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 - MSE: **0.2264**
 
 ## 🔍 Interpretasi:
-
 - Recall tinggi (80.60%) menunjukkan model efektif dalam mendeteksi pelanggan yang benar-benar churn.
 - ROC AUC > 0.84 menandakan kemampuan diskriminatif yang sangat baik antara churn dan non-churn.
 - Model ini cocok digunakan sebagai baseline untuk sistem rekomendasi retensi pelanggan.
+
+---
 
 ### 🔹 K-Means Clustering (K = 3):
 - Silhouette Score: **0.4177** (clustering sedang, dapat ditingkatkan)
@@ -105,7 +109,7 @@ Notebook ini berisi seluruh tahapan proses analisis data, dari eksplorasi awal h
 - Dengan jumlah klaster hanya 3, segmentasi menjadi lebih sederhana dan mudah dianalisis, cocok untuk strategi awal segmentasi pelanggan.
 
 - Setiap klaster dapat dianalisis lebih lanjut berdasarkan atribut seperti tenure, MonthlyCharges, dan Contract untuk membantu menyusun strategi pemasaran yang lebih terarah.
-- 
+
 ---
 
 ## 👨‍💻 Tim Pengembang
